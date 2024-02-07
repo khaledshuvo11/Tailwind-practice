@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind CSS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="bg-blue-900">
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#0101a3] text-white">
     <!-- Navbar Section -->
 
-    <nav>
-        <div>
-            <img src="../logo/5905717.png" alt="">
-        </div>
-        <ul>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Competition</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+    <nav class="w-full h-14 flex justify-between items-center p-9">
+      <div>
+        <img src="../logo/5905717.png" alt="" />
+      </div>
+      <div class="uppercase">
+        <ul class="md:flex font-bebas text-xl">
+          <li class="mx-[10px]"><a href="#">Team</a></li>
+          <li class="mx-[10px]"><a href="#">Competition</a></li>
+          <li class="mx-[10px]"><a href="#">About</a></li>
+          <li class="mx-[10px]"><a href="#">Contact</a></li>
         </ul>
+      </div>
     </nav>
-    
 
-    
-</body>
+    <!-- Hero Section -->
+
+    <div class="hero-section bg-gradient-to-b from-[#0101a3] from-60% to-slate-900 to-95%">
+      <div class="w-full h-5 bg-[#e92bde]"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 p-32">
+        <div>
+          <div class="text-8xl font-bebas uppercase hero-title">
+            <span class="relative z-50 inline-block">discover the</span> <br>
+            <span class="relative z-50 inline-block">new sports</span> <br>
+            <span class="relative z-50 inline-block">online</span>
+          </div>
+          <p class="text-3xl uppercase font-bebas text-[#e92bde] my-4">13 - 14 June Online Event</p>
+          <p class="text-3xl uppercase font-bebas my-4">
+            Lorem ipsum dolor sit amet, <br> conse ctetur adipiscing elit, sed
+          </p>
+          <button class="px-12 py-3 text-2xl bg-[#e92bde] uppercase font-bebas">READ MORE</button>
+        </div>
+        <div class="ml-auto">
+          <img src="../logo/Boy.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
