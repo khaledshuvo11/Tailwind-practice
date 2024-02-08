@@ -546,12 +546,50 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 .relative{
   position: relative;
 }
 
 .z-50{
   z-index: 50;
+}
+
+.m-auto{
+  margin: auto;
 }
 
 .mx-\[10px\]{
@@ -583,6 +621,26 @@ video {
 
 .mt-3{
   margin-top: 0.75rem;
+}
+
+.ml-8{
+  margin-left: 2rem;
+}
+
+.mr-8{
+  margin-right: 2rem;
+}
+
+.mr-7{
+  margin-right: 1.75rem;
+}
+
+.mr-9{
+  margin-right: 2.25rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
 }
 
 .block{
@@ -645,6 +703,10 @@ video {
   place-content: center;
 }
 
+.place-items-center{
+  place-items: center;
+}
+
 .items-center{
   align-items: center;
 }
@@ -653,10 +715,24 @@ video {
   justify-content: space-between;
 }
 
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-52 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(13rem * var(--tw-space-x-reverse));
+  margin-left: calc(13rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden{
@@ -730,6 +806,10 @@ video {
   padding: 2.25rem;
 }
 
+.p-20{
+  padding: 5rem;
+}
+
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
@@ -738,6 +818,20 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .font-bebas{
@@ -767,6 +861,16 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .font-medium{
@@ -847,5 +951,9 @@ video {
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
