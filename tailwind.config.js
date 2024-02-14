@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'bebas': 'Bebas Neue, sans-serif'
+      'poppins': "Poppins, sans-serif"
     },
   },
   plugins: [],
